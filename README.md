@@ -1,46 +1,59 @@
-1. Título do Projeto
-
-TechFlow Task Manager – Sistema de Gerenciamento Ágil para Logística.
-
-2. Objetivo e Contexto
-Este projeto foi desenvolvido para a TechFlow Solutions com o intuito de atender uma startup de logística que necessita de uma ferramenta para acompanhar seu fluxo de trabalho em tempo real. O foco principal é a priorização de tarefas críticas e o monitoramento de desempenho através de uma interface funcional e intuitiva.
-
-3. Escopo Inicial
-O sistema permite realizar as seguintes operações (CRUD):
+TechFlow Task Manager – Gerenciamento Ágil para Logística
+1. Descrição do Projeto
+Este sistema foi desenvolvido para a TechFlow Solutions com o objetivo de atender uma startup de logística que necessita monitorar seu fluxo de trabalho em tempo real. A ferramenta foca na priorização de tarefas críticas e monitoramento de desempenho através de uma interface funcional e intuitiva.
 
 
-Criação de tarefas: Registro de novas demandas logísticas.
+2. Escopo do Projeto
+O sistema consiste em um CRUD básico para gerenciamento de demandas logísticas:
 
 
-Leitura/Listagem: Visualização de todas as atividades pendentes e concluídas.
+
+Create: Registro de novas tarefas.
 
 
-Atualização: Edição de detalhes das tarefas ou alteração de status.
+Read: Listagem de atividades pendentes e concluídas.
 
 
-Exclusão: Remoção de registros conforme a necessidade do usuário.
-
-4. Metodologia Adotada
-Utilizamos a metodologia Ágil, com foco em entregas iterativas e transparência. A gestão visual é feita através do Kanban, organizado nas seguintes etapas:
+Update: Alteração de detalhes ou status da tarefa.
 
 
-A Fazer (To Do): Tarefas aguardando início.
+Delete: Remoção de registros conforme necessidade.
+
+3. Metodologia Ágil
+Utilizamos a metodologia ágil com foco em entregas iterativas:
 
 
-Em Progresso (In Progress): Atividades em execução pela equipe.
+
+Kanban: Gestão visual realizada através da aba Projects do GitHub, com as colunas A Fazer, Em Progresso e Concluído.
 
 
-Concluído (Done): Demandas finalizadas e validadas.
 
-5. Tecnologias Utilizadas
-
-Linguagem: (Insira aqui: Python, JavaScript ou Java).
+Versionamento: Histórico de no mínimo 10 commits semânticos para rastreabilidade das alterações.
 
 
-Gestão e Versionamento: GitHub e GitHub Projects.
+4. Controle de Qualidade (CI/CD)
+Para garantir a confiabilidade do software, configuramos um pipeline de integração contínua (CI):
 
 
-Qualidade (CI/CD): GitHub Actions para execução de testes automatizados.
+
+Ferramenta: GitHub Actions.
 
 
-Testes: (Insira aqui: PyTest ou Jest).
+
+Testes: Execução automatizada de testes unitários para validação de entradas de dados em cada commit.
+
+
+5. Como Executar o Projeto
+Clone este repositório: git clone [URL-DO-REPOSITORIO].
+
+Certifique-se de ter o ambiente da linguagem escolhida instalado (Python/Node.js).
+
+Instale as dependências necessárias.
+
+Execute o sistema principal na pasta /src.
+
+Para rodar os testes, utilize o comando específico do framework (ex: pytest ou npm test).
+
+6. Gestão de Mudanças (Simulação de Escopo)
+
+Alteração: Adição de campo de "Nível de Prioridade" (Baixa, Média, Alta) e "Data Limite" para cada tarefa. Justificativa: Durante o ciclo de desenvolvimento, a startup de logística identificou que tarefas de entrega expressa precisavam de destaque visual no sistema para evitar atrasos críticos. Esta mudança foi registrada no Kanban e implementada no código.
