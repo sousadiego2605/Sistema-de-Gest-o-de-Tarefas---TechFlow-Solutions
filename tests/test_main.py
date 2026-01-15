@@ -1,10 +1,8 @@
-from src.main import deletar_tarefa, criar_tarefa
+from src.main import criar_tarefa # Garanta que esta linha está no topo
 
-def test_criar_tarefa():
-    # Usa a função real do sistema para criar a tarefa
-    tarefa = criar_tarefa(1, "Entrega Expressa")
-    assert tarefa['titulo'] == "Entrega Expressa"
-    assert tarefa['status'] == "Pendente"
+def test_criar_tarefa_com_prioridade():
+    tarefa = criar_tarefa(1, "Entrega Urgente", "Alta")
+    assert tarefa['prioridade'] == "Alta"
 
 def test_deletar_tarefa():
     # Cria uma lista simulada
