@@ -1,7 +1,5 @@
-def criar_tarefa(id, titulo, status="Pendente"):
-    if not titulo:
-        return "Erro: Título vazio"
-    return {"id": id, "titulo": titulo, "status": status}
+def criar_tarefa(id, titulo, prioridade="Baixa"):
+    return {"id": id, "titulo": titulo, "prioridade": prioridade, "status": "Pendente"}
 
 def deletar_tarefa(tarefas, id_tarefa):
     for tarefa in tarefas:
