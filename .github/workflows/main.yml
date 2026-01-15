@@ -1,0 +1,17 @@
+name: CI Pipeline - TechFlow
+
+on: [push] # Executa em cada commit enviado
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Configurar Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.9'
+    - name: Instalar dependências
+      run: pip install pytest
+    - name: Rodar Testes
+      run: pytest
