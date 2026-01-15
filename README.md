@@ -57,3 +57,6 @@ Para rodar os testes, utilize o comando específico do framework (ex: pytest ou 
 6. Gestão de Mudanças (Simulação de Escopo)
 
 Alteração: Adição de campo de "Nível de Prioridade" (Baixa, Média, Alta) e "Data Limite" para cada tarefa. Justificativa: Durante o ciclo de desenvolvimento, a startup de logística identificou que tarefas de entrega expressa precisavam de destaque visual no sistema para evitar atrasos críticos. Esta mudança foi registrada no Kanban e implementada no código.
+
+## Gestão de Mudanças
+"Durante o desenvolvimento, foi identificada a necessidade de classificar tarefas por urgência. Foi implementado o campo 'Prioridade' (Alta/Média/Baixa) na entidade Tarefa para atender a esse requisito logístico."
